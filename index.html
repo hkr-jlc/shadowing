@@ -354,6 +354,11 @@
     border-width:10px 9px 0 0;
     border-color:var(--chat-b) transparent transparent transparent;
   }
+  .turn.grouped{ margin-top:-4px; }
+  .turn.grouped .badge{ visibility:hidden; }
+  .turn.grouped .lines::after{ display:none; }
+  .turn.grouped.speaker-A .lines{ border-top-left-radius:16px; }
+  .turn.grouped.speaker-B .lines{ border-top-right-radius:16px; }
   .kalimat{
     font-size:20px;
     line-height:1.75;
@@ -880,11 +885,15 @@ function renderItem(f){
   const dlg = document.createElement('div');
   dlg.className = 'dialogue';
 
+  let prevSpeaker = null;
   (it.turns || []).forEach(t => {
     const label = t.speaker;
     const k = t.kalimat;
+    const isGrouped = (label === prevSpeaker);
+    prevSpeaker = label;
+
     const turn = document.createElement('div');
-    turn.className = 'turn speaker-' + label;
+    turn.className = 'turn speaker-' + label + (isGrouped ? ' grouped' : '');
 
     const badge = document.createElement('div');
     badge.className = 'badge';
