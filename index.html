@@ -18,6 +18,8 @@
     --hanko:#a8402e;    /* stamp red, sparing use */
     --hanko-soft:#c9705f;
     --gold:#b8923f;     /* kinari gold, tertiary */
+    --chat-a:#ffffff;   /* WA-style bubble, speaker A (left) */
+    --chat-b:#d9f2d0;   /* WA-style bubble, speaker B (right, soft green) */
     --shadow-a:rgba(44,74,110,0.16);
     --shadow-b:rgba(168,64,46,0.14);
     --sbw:300px;        /* sidebar width, toggled to 0 when collapsed */
@@ -133,7 +135,7 @@
     overflow-y:auto;
     overflow-x:hidden;
     padding:10px 8px 90px;
-    width:280px; /* fixed content width so it doesn't reflow while collapsing */
+    width:300px; /* fixed content width so it doesn't reflow while collapsing */
   }
 
   .book-block{margin-bottom:10px;}
@@ -172,7 +174,9 @@
   .track-block{margin-bottom:8px; margin-top:6px;}
   .track-units{
     display:block;
+    padding-left:6px;
     margin-left:10px;
+    border-left:2px solid var(--paper-line);
   }
 
   .unit-block{margin-bottom:4px;}
@@ -296,39 +300,67 @@
   .dialogue{
     display:flex;
     flex-direction:column;
-    gap:18px;
+    gap:10px;
+    background:
+      radial-gradient(circle at 1px 1px, rgba(28,36,48,0.045) 1px, transparent 0) var(--paper);
+    background-size: 20px 20px;
+    border:1px solid var(--paper-line);
+    border-radius:16px;
+    padding:22px 18px;
   }
   .turn{
-    display:grid;
-    grid-template-columns:44px 1fr;
-    gap:16px;
-    align-items:start;
+    display:flex;
+    align-items:flex-end;
+    gap:8px;
+    max-width:100%;
   }
+  .turn.speaker-A{ justify-content:flex-start; }
+  .turn.speaker-B{ justify-content:flex-end; flex-direction:row-reverse; }
   .turn .badge{
-    width:40px;height:40px;
+    flex-shrink:0;
+    width:30px;height:30px;
     border-radius:50%;
     display:flex;align-items:center;justify-content:center;
     font-family:'Shippori Mincho', serif;
     font-weight:700;
-    font-size:17px;
+    font-size:13px;
     color:#fff;
-    margin-top:2px;
   }
   .turn.speaker-A .badge{background:var(--ai);}
   .turn.speaker-B .badge{background:var(--hanko);}
   .turn .lines{
-    background:var(--paper-raised);
-    border:1px solid var(--paper-line);
-    border-radius:12px;
-    padding:16px 20px;
+    position:relative;
+    max-width:70%;
+    background:var(--chat-a);
+    border-radius:16px;
+    padding:10px 14px 8px;
+    box-shadow:0 1px 2px rgba(28,36,48,0.12);
   }
-  .turn.speaker-A .lines{border-left:3px solid var(--ai);}
-  .turn.speaker-B .lines{border-left:3px solid var(--hanko);}
+  .turn.speaker-A .lines{border-bottom-left-radius:4px;}
+  .turn.speaker-B .lines{background:var(--chat-b); border-bottom-right-radius:4px;}
+  .turn.speaker-A .lines::after{
+    content:'';
+    position:absolute;
+    left:-7px; bottom:0;
+    width:0;height:0;
+    border-style:solid;
+    border-width:0 9px 10px 0;
+    border-color:transparent var(--chat-a) transparent transparent;
+  }
+  .turn.speaker-B .lines::after{
+    content:'';
+    position:absolute;
+    right:-7px; bottom:0;
+    width:0;height:0;
+    border-style:solid;
+    border-width:10px 9px 0 0;
+    border-color:var(--chat-b) transparent transparent transparent;
+  }
   .kalimat{
-    font-size:22px;
-    line-height:2;
+    font-size:20px;
+    line-height:1.75;
     cursor:pointer;
-    margin:4px 0;
+    margin:2px 0;
   }
   .kalimat + .kalimat{margin-top:2px;}
   .kata{
@@ -341,6 +373,13 @@
     background:var(--gold);
     color:#241c08;
   }
+  .msg-time{
+    font-size:10.5px;
+    color:var(--ink-soft);
+    opacity:.6;
+    text-align:right;
+    margin-top:2px;
+  }
   .empty-turn{
     font-size:13px;
     color:var(--ink-soft);
@@ -348,11 +387,11 @@
   }
   .terjemahan{
     display:none;
-    font-size:13px;
+    font-size:12.5px;
     line-height:1.5;
     color:var(--ink-soft);
     font-style:italic;
-    margin:-2px 0 8px;
+    margin:0 0 4px;
   }
   body.show-translation .terjemahan{display:block;}
   .item-nav{
@@ -486,7 +525,7 @@
     .sidebar{
       position:fixed;
       top:var(--tbh);left:0;
-      width:82vw;max-width:290px;
+      width:82vw;max-width:320px;
       height:calc(100vh - var(--tbh));
       z-index:55;
       box-shadow:4px 0 18px rgba(0,0,0,0.18);
@@ -880,6 +919,11 @@ function renderItem(f){
       tr.textContent = k.text_id;
       lines.appendChild(tr);
     }
+
+    const timeEl = document.createElement('div');
+    timeEl.className = 'msg-time';
+    timeEl.textContent = fmtTime(k.start);
+    lines.appendChild(timeEl);
 
     turn.appendChild(lines);
     dlg.appendChild(turn);
