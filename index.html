@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>シャドーイング — 日本語を話そう</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1c2430;
+    --ink-soft:#4b5768;
+    --paper:#eceae2;
+    --paper-raised:#f4f2ea;
+    --paper-line:#d7d3c4;
+    --ai:#2c4a6e;       /* ai-iro indigo, primary accent */
+    --ai-soft:#5c7a9c;
+    --hanko:#a8402e;    /* stamp red, sparing use */
+    --hanko-soft:#c9705f;
+    --gold:#b8923f;     /* kinari gold, tertiary */
+    --shadow-a:rgba(44,74,110,0.16);
+    --shadow-b:rgba(168,64,46,0.14);
+    --sbw:300px;        /* sidebar width, toggled to 0 when collapsed */
+    --tbh:60px;         /* topbar height */
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Zen Kaku Gothic New', 'Segoe UI', sans-serif;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(28,36,48,0.05) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+  body.nav-collapsed{ --sbw:0px; }
+
+  /* ---- Top bar ---- */
+  .topbar{
+    position:fixed;
+    top:0;left:0;right:0;
+    height:var(--tbh);
+    background:var(--paper-raised);
+    border-bottom:1px solid var(--paper-line);
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:0 18px;
+    z-index:60;
+  }
+  .sidebar-toggle{
+    flex-shrink:0;
+    width:36px;height:36px;
+    border-radius:8px;
+    border:1px solid var(--paper-line);
+    background:var(--paper);
+    color:var(--ink);
+    font-size:15px;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .sidebar-toggle:hover{border-color:var(--ai);color:var(--ai);}
+  .topbar .brand{
+    flex:1;
+    padding:0;
+    border:0;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    overflow:hidden;
+  }
+  .topbar .brand .kicker{
+    display:none;
+  }
+  .topbar .brand h1{
+    font-family:'Shippori Mincho', serif;
+    font-size:17px;
+    line-height:1.2;
+    margin:0;
+    font-weight:700;
+    white-space:nowrap;
+  }
+  .topbar .brand .sub{
+    font-size:12px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  #translationToggle{
+    flex-shrink:0;
+    background:var(--paper);
+    border:1px solid var(--paper-line);
+    color:var(--ink-soft);
+    padding:7px 12px;
+    border-radius:8px;
+    font-size:12px;
+    font-weight:700;
+    cursor:pointer;
+    font-family:inherit;
+    white-space:nowrap;
+  }
+  #translationToggle:hover{border-color:var(--ai-soft);}
+  #translationToggle.active{
+    background:var(--ai);
+    border-color:var(--ai);
+    color:#fff;
+  }
+
+  .app{
+    display:grid;
+    grid-template-columns: var(--sbw) 1fr;
+    min-height:100vh;
+    padding-top:var(--tbh);
+    transition:grid-template-columns .22s ease;
+  }
+
+  /* ---- Sidebar ---- */
+  .sidebar{
+    background:var(--paper-raised);
+    border-right:1px solid var(--paper-line);
+    display:flex;
+    flex-direction:column;
+    height:calc(100vh - var(--tbh));
+    position:sticky;
+    top:var(--tbh);
+    overflow:hidden;
+  }
+  .tree{
+    flex:1;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:10px 8px 90px;
+    width:300px; /* fixed content width so it doesn't reflow while collapsing */
+  }
+
+  .book-block{margin-bottom:10px;}
+  .book-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    background:rgba(168,64,46,0.08);
+    border:none;
+    text-align:left;
+    padding:13px 12px;
+    cursor:pointer;
+    border-radius:8px;
+    font-family:'Shippori Mincho', serif;
+    font-size:16px;
+    font-weight:700;
+    color:var(--hanko);
+  }
+  .book-head:hover{background:rgba(168,64,46,0.15);}
+  .book-head .chev{
+    margin-left:auto;
+    font-size:11px;
+    color:var(--hanko-soft);
+    transition:transform .18s ease;
+  }
+  .book-block.open .book-head .chev{transform:rotate(90deg);}
+  .book-units{
+    display:none;
+    padding-left:2px;
+    margin-left:10px;
+    border-left:2px solid var(--paper-line);
+  }
+  .book-block.open .book-units{display:block;}
+
+  .track-block{margin-bottom:8px; margin-top:6px;}
+  .track-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    background:rgba(44,74,110,0.05);
+    border:none;
+    text-align:left;
+    padding:12px 12px;
+    cursor:pointer;
+    border-radius:8px;
+    font-family:'Shippori Mincho', serif;
+    font-size:16px;
+    font-weight:700;
+    color:var(--ai);
+  }
+  .track-head:hover{background:rgba(44,74,110,0.1);}
+  .track-head .chev{
+    margin-left:auto;
+    font-size:11px;
+    color:var(--ai-soft);
+    transition:transform .18s ease;
+  }
+  .track-block.open .track-head .chev{transform:rotate(90deg);}
+  .track-units{
+    display:none;
+    padding-left:6px;
+    margin-left:10px;
+    border-left:2px solid var(--paper-line);
+  }
+  .track-block.open .track-units{display:block;}
+
+  .unit-block{margin-bottom:4px;}
+  .unit-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    background:none;
+    border:none;
+    text-align:left;
+    padding:10px 12px;
+    cursor:pointer;
+    border-radius:8px;
+    font-family:'Shippori Mincho', serif;
+    font-size:15px;
+    font-weight:700;
+    color:var(--ink);
+  }
+  .unit-head:hover{background:rgba(44,74,110,0.06);}
+  .unit-head .num{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:24px;height:24px;
+    border:1.5px solid var(--hanko);
+    color:var(--hanko);
+    border-radius:3px;
+    font-size:12px;
+    font-weight:700;
+    flex-shrink:0;
+  }
+  .unit-head .chev{
+    margin-left:auto;
+    font-size:11px;
+    color:var(--ink-soft);
+    transition:transform .18s ease;
+  }
+  .unit-block.open .unit-head .chev{transform:rotate(90deg);}
+  .sections{
+    display:none;
+    padding-left:14px;
+    border-left:2px solid var(--paper-line);
+    margin-left:22px;
+  }
+  .unit-block.open .sections{display:block;}
+  .section-block{margin:2px 0;}
+  .section-head{
+    width:100%;
+    background:none;
+    border:none;
+    text-align:left;
+    padding:7px 10px;
+    cursor:pointer;
+    border-radius:6px;
+    font-size:13px;
+    color:var(--ink-soft);
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .section-head:hover{background:rgba(44,74,110,0.06);}
+  .section-head .chev{margin-left:auto;font-size:10px;transition:transform .18s ease;}
+  .section-block.open .section-head .chev{transform:rotate(90deg);}
+  .items{
+    display:none;
+    flex-wrap:wrap;
+    gap:5px;
+    padding:6px 6px 10px 18px;
+  }
+  .section-block.open .items{display:flex;}
+  .item-chip{
+    width:28px;height:28px;
+    border:1px solid var(--paper-line);
+    background:var(--paper);
+    border-radius:6px;
+    font-size:11px;
+    color:var(--ink-soft);
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .item-chip:hover{border-color:var(--ai-soft);color:var(--ai);}
+  .item-chip.active{
+    background:var(--ai);
+    border-color:var(--ai);
+    color:#fff;
+    font-weight:700;
+  }
+  .item-chip.playing{
+    box-shadow:0 0 0 2px var(--shadow-a);
+  }
+
+  /* ---- Main ---- */
+  main{
+    padding:34px 44px 140px;
+    max-width:820px;
+  }
+  .crumbs{
+    font-size:12px;
+    color:var(--ink-soft);
+    letter-spacing:.04em;
+    margin-bottom:6px;
+  }
+  .crumbs b{color:var(--hanko);}
+  .item-title{
+    font-family:'Shippori Mincho', serif;
+    font-size:30px;
+    font-weight:700;
+    margin:0 0 26px;
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    text-shadow: 3px 3px 0 var(--shadow-b);
+  }
+  .item-title .n{
+    font-size:16px;
+    color:var(--ink-soft);
+    font-family:'Zen Kaku Gothic New', sans-serif;
+    font-weight:500;
+  }
+  .dialogue{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+  .turn{
+    display:grid;
+    grid-template-columns:44px 1fr;
+    gap:16px;
+    align-items:start;
+  }
+  .turn .badge{
+    width:40px;height:40px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Shippori Mincho', serif;
+    font-weight:700;
+    font-size:17px;
+    color:#fff;
+    margin-top:2px;
+  }
+  .turn.speaker-A .badge{background:var(--ai);}
+  .turn.speaker-B .badge{background:var(--hanko);}
+  .turn .lines{
+    background:var(--paper-raised);
+    border:1px solid var(--paper-line);
+    border-radius:12px;
+    padding:16px 20px;
+  }
+  .turn.speaker-A .lines{border-left:3px solid var(--ai);}
+  .turn.speaker-B .lines{border-left:3px solid var(--hanko);}
+  .kalimat{
+    font-size:22px;
+    line-height:2;
+    cursor:pointer;
+    margin:4px 0;
+  }
+  .kalimat + .kalimat{margin-top:2px;}
+  .kata{
+    padding:1px 2px;
+    border-radius:4px;
+    transition:background .1s ease, color .1s ease;
+  }
+  .kalimat:hover .kata{color:var(--ai-soft);}
+  .kata.current{
+    background:var(--gold);
+    color:#241c08;
+  }
+  .empty-turn{
+    font-size:13px;
+    color:var(--ink-soft);
+    font-style:italic;
+  }
+  .terjemahan{
+    display:none;
+    font-size:13px;
+    line-height:1.5;
+    color:var(--ink-soft);
+    font-style:italic;
+    margin:-2px 0 8px;
+  }
+  body.show-translation .terjemahan{display:block;}
+  .item-nav{
+    display:flex;
+    justify-content:space-between;
+    margin-top:34px;
+    padding-top:18px;
+    border-top:1px solid var(--paper-line);
+  }
+  .item-nav button{
+    background:none;
+    border:1px solid var(--paper-line);
+    color:var(--ink);
+    padding:9px 16px;
+    border-radius:8px;
+    font-size:13px;
+    cursor:pointer;
+    font-family:inherit;
+  }
+  .item-nav button:hover{border-color:var(--ai);color:var(--ai);}
+  .item-nav button:disabled{opacity:.35;cursor:default;}
+
+  .loading, .error{
+    padding:60px 20px;
+    color:var(--ink-soft);
+    font-size:14px;
+  }
+
+  /* ---- Player bar ---- */
+  .player{
+    position:fixed;
+    left:var(--sbw);right:0;bottom:0;
+    background:var(--paper-raised);
+    border-top:1px solid var(--paper-line);
+    padding:10px 28px 16px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    transition:left .22s ease;
+  }
+  .player-row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .play-btn{
+    width:42px;height:42px;
+    border-radius:50%;
+    background:var(--ink);
+    color:var(--paper);
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .play-btn:hover{background:var(--ai);}
+  .seek{
+    flex:1;
+    -webkit-appearance:none;
+    height:4px;
+    border-radius:2px;
+    background:var(--paper-line);
+    outline:none;
+  }
+  .seek::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:13px;height:13px;
+    border-radius:50%;
+    background:var(--hanko);
+    cursor:pointer;
+    margin-top:-1px;
+  }
+  .time{
+    font-size:11px;
+    color:var(--ink-soft);
+    min-width:86px;
+    text-align:right;
+    font-variant-numeric:tabular-nums;
+  }
+  .player-controls{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  .player-controls button{
+    background:none;
+    border:1px solid var(--paper-line);
+    border-radius:6px;
+    padding:4px 10px;
+    color:var(--ink-soft);
+    cursor:pointer;
+    font-size:12px;
+    font-family:inherit;
+  }
+  .player-controls button.active{
+    border-color:var(--ai);
+    color:var(--ai);
+    font-weight:700;
+  }
+  .player-controls .speed-group,.player-controls .loop-group{
+    display:flex;
+    gap:4px;
+    align-items:center;
+  }
+  .now-playing{
+    font-size:12px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width:220px;
+  }
+  .seek-warning{
+    display:none;
+    font-size:11.5px;
+    background:rgba(168,64,46,0.1);
+    border:1px solid var(--hanko-soft);
+    color:var(--hanko);
+    padding:6px 10px;
+    border-radius:6px;
+    margin-top:2px;
+  }
+  .seek-warning.show{display:block;}
+
+  @media (max-width: 860px){
+    body{ --sbw:0px; }
+    .app{grid-template-columns:1fr;}
+    .sidebar{
+      position:fixed;
+      top:var(--tbh);left:0;
+      width:82vw;max-width:320px;
+      height:calc(100vh - var(--tbh));
+      z-index:55;
+      box-shadow:4px 0 18px rgba(0,0,0,0.18);
+      transform:translateX(-100%);
+      transition:transform .22s ease;
+    }
+    body.nav-collapsed .sidebar{transform:translateX(-100%);}
+    body:not(.nav-collapsed) .sidebar{transform:translateX(0);}
+    .topbar .brand .sub{display:none;}
+    main{padding:24px 18px 160px;}
+    .player{left:0;padding:8px 14px 14px;}
+    .now-playing{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="メニューを開閉">☰</button>
+  <div class="brand">
+    <h1>日本語を話そう</h1>
+    <div class="sub">教材・CD・Unit を選んで練習を始めましょう</div>
+  </div>
+  <button id="translationToggle" aria-label="翻訳の表示切替" title="インドネシア語訳の表示切替">🇮🇩 訳</button>
+</div>
+
+<div class="app">
+  <aside class="sidebar">
+    <nav class="tree" id="tree"><div class="loading">読み込み中…</div></nav>
+  </aside>
+
+  <main id="main">
+    <div class="loading">Memuat data…</div>
+  </main>
+</div>
+
+<div class="player">
+  <div class="player-row">
+    <button class="play-btn" id="playBtn" aria-label="Play/Pause">▶</button>
+    <input type="range" class="seek" id="seek" min="0" max="100" value="0" step="0.1">
+    <span class="time" id="timeLabel">0:00 / 0:00</span>
+  </div>
+  <div class="player-row">
+    <div class="player-controls">
+      <div class="speed-group">
+        <span>速度</span>
+        <button data-speed="0.75">0.75x</button>
+        <button data-speed="1" class="active">1x</button>
+        <button data-speed="1.25">1.25x</button>
+      </div>
+      <div class="loop-group">
+        <button id="loopBtn">🔁 この項目をループ</button>
+      </div>
+    </div>
+    <div class="now-playing" id="nowPlaying"></div>
+  </div>
+  <div class="seek-warning" id="seekWarning">⚠ Audio gagal lompat ke posisi yang diminta beberapa kali. Kemungkinan server audio tidak mendukung seeking dengan baik — coba host mp3 ini di tempat lain (GitHub, dsb).</div>
+</div>
+
+<audio id="audio" preload="metadata"></audio>
+
+<script>
+const BOOKS = [
+  { id:'shochu', file:'shadowing_shochu.json' },
+  { id:'chujo',  file:'shadowing_chujo.json' },
+  { id:'men',    file:'shadowing_men.json' }
+];
+
+let DATA = null;   // { books: [{id, title, tracks}, ...] }
+let flatItems = [];   // {bookId, bookTitle, trackId, trackLabel, audioUrl, unitNum, sectionNum, itemNum, start, end, ref}
+let currentIdx = -1;
+let loopMode = false;
+let currentAudioUrl = null;
+
+const audio = document.getElementById('audio');
+const treeEl = document.getElementById('tree');
+const mainEl = document.getElementById('main');
+const playBtn = document.getElementById('playBtn');
+const seek = document.getElementById('seek');
+const timeLabel = document.getElementById('timeLabel');
+const nowPlaying = document.getElementById('nowPlaying');
+const loopBtn = document.getElementById('loopBtn');
+const sidebarToggle = document.getElementById('sidebarToggle');
+const translationToggle = document.getElementById('translationToggle');
+
+// start collapsed on narrow screens so the drawer doesn't block content
+if(window.innerWidth <= 860){
+  document.body.classList.add('nav-collapsed');
+}
+sidebarToggle.onclick = () => {
+  document.body.classList.toggle('nav-collapsed');
+};
+translationToggle.onclick = () => {
+  document.body.classList.toggle('show-translation');
+  translationToggle.classList.toggle('active');
+};
+
+function fmtTime(s){
+  if(!isFinite(s)) return '0:00';
+  const m = Math.floor(s/60);
+  const sec = Math.floor(s%60).toString().padStart(2,'0');
+  return `${m}:${sec}`;
+}
+
+Promise.all(BOOKS.map(b =>
+  fetch(b.file).then(r => {
+    if(!r.ok) throw new Error(`${b.file}: HTTP ${r.status}`);
+    return r.json();
+  }).then(data => ({
+    id: b.id,
+    title: data.title || b.id,
+    tracks: data.tracks
+  }))
+))
+  .then(books => {
+    DATA = { books };
+    buildFlatItems();
+    buildTree();
+    if(flatItems.length){
+      selectItem(0, {autoplay:false, openTree:true});
+    }
+  })
+  .catch(err => {
+    treeEl.innerHTML = `<div class="error">データを読み込めませんでした: ${err.message}<br>shadowing_shochu.json / shadowing_chujo.json / shadowing_men.json が同じフォルダにあるか確認してください。</div>`;
+    mainEl.innerHTML = '';
+  });
+
+function buildFlatItems(){
+  flatItems = [];
+  DATA.books.forEach(book => {
+    book.tracks.forEach(tr => {
+      const trackId = `${book.id}__${tr.id}`;
+      tr.units.forEach(u => {
+        u.sections.forEach(s => {
+          s.items.forEach(it => {
+            flatItems.push({
+              bookId: book.id,
+              bookTitle: book.title,
+              trackId: trackId,
+              trackLabel: tr.label,
+              audioUrl: tr.audio_url,
+              unitNum:u.unit, sectionNum:s.section, itemNum:it.item,
+              start:it.start, end:it.end, ref:it
+            });
+          });
+        });
+      });
+    });
+  });
+}
+
+function buildTree(){
+  treeEl.innerHTML = '';
+  DATA.books.forEach((book, bIdx) => {
+    const bookBlock = document.createElement('div');
+    bookBlock.className = 'book-block' + (bIdx === 0 ? ' open' : '');
+    bookBlock.dataset.book = book.id;
+
+    const bookHead = document.createElement('button');
+    bookHead.className = 'book-head';
+    bookHead.innerHTML = `<span>${book.title}</span><span class="chev">▶</span>`;
+    bookHead.onclick = () => bookBlock.classList.toggle('open');
+    bookBlock.appendChild(bookHead);
+
+    const booksUnitsWrap = document.createElement('div');
+    booksUnitsWrap.className = 'book-units';
+
+    book.tracks.forEach((tr) => {
+    const trackId = `${book.id}__${tr.id}`;
+    const trackBlock = document.createElement('div');
+    trackBlock.className = 'track-block';
+    trackBlock.dataset.track = trackId;
+
+    const trackHead = document.createElement('button');
+    trackHead.className = 'track-head';
+    trackHead.innerHTML = `<span>${tr.label}</span><span class="chev">▶</span>`;
+    trackHead.onclick = () => trackBlock.classList.toggle('open');
+    trackBlock.appendChild(trackHead);
+
+    const unitsWrap = document.createElement('div');
+    unitsWrap.className = 'track-units';
+
+    tr.units.forEach(u => {
+      const unitBlock = document.createElement('div');
+      unitBlock.className = 'unit-block';
+      unitBlock.dataset.track = trackId;
+      unitBlock.dataset.unit = u.unit;
+
+      const head = document.createElement('button');
+      head.className = 'unit-head';
+      head.innerHTML = `<span class="num">${u.unit}</span><span>Unit ${u.unit}</span><span class="chev">▶</span>`;
+      head.onclick = () => unitBlock.classList.toggle('open');
+      unitBlock.appendChild(head);
+
+      const sectionsWrap = document.createElement('div');
+      sectionsWrap.className = 'sections';
+
+      u.sections.forEach(s => {
+        const secBlock = document.createElement('div');
+        secBlock.className = 'section-block';
+        secBlock.dataset.section = s.section;
+
+        const secHead = document.createElement('button');
+        secHead.className = 'section-head';
+        secHead.innerHTML = `<span>セクション ${s.section}</span><span class="chev">▶</span>`;
+        secHead.onclick = () => secBlock.classList.toggle('open');
+        secBlock.appendChild(secHead);
+
+        const itemsWrap = document.createElement('div');
+        itemsWrap.className = 'items';
+
+        s.items.forEach(it => {
+          const chip = document.createElement('button');
+          chip.className = 'item-chip';
+          chip.textContent = it.item;
+          chip.dataset.track = trackId;
+          chip.dataset.unit = u.unit;
+          chip.dataset.section = s.section;
+          chip.dataset.item = it.item;
+          chip.onclick = () => {
+            const idx = flatItems.findIndex(f => f.trackId===trackId && f.unitNum===u.unit && f.sectionNum===s.section && f.itemNum===it.item);
+            selectItem(idx, {autoplay:true});
+          };
+          itemsWrap.appendChild(chip);
+        });
+
+        secBlock.appendChild(itemsWrap);
+        sectionsWrap.appendChild(secBlock);
+      });
+
+      unitBlock.appendChild(sectionsWrap);
+      unitsWrap.appendChild(unitBlock);
+    });
+
+    trackBlock.appendChild(unitsWrap);
+    booksUnitsWrap.appendChild(trackBlock);
+    });
+
+    bookBlock.appendChild(booksUnitsWrap);
+    treeEl.appendChild(bookBlock);
+  });
+}
+
+function highlightTreeSelection(f){
+  document.querySelectorAll('.item-chip.active').forEach(el => el.classList.remove('active'));
+  const sel = document.querySelector(`.item-chip[data-track="${f.trackId}"][data-unit="${f.unitNum}"][data-section="${f.sectionNum}"][data-item="${f.itemNum}"]`);
+  if(sel){
+    sel.classList.add('active');
+    // keep the active item vertically centered in the sidebar
+    setTimeout(() => sel.scrollIntoView({behavior:'smooth', block:'center'}), 60);
+  }
+}
+
+function openTreeTo(f){
+  document.querySelectorAll('.book-block').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.track-block').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.unit-block').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.section-block').forEach(el => el.classList.remove('open'));
+  const tb = document.querySelector(`.track-block[data-track="${f.trackId}"]`);
+  const bb = tb && tb.closest('.book-block');
+  if(bb) bb.classList.add('open');
+  if(tb) tb.classList.add('open');
+  const ub = tb && tb.querySelector(`.unit-block[data-unit="${f.unitNum}"]`);
+  if(ub) ub.classList.add('open');
+  const sb = ub && ub.querySelector(`.section-block[data-section="${f.sectionNum}"]`);
+  if(sb) sb.classList.add('open');
+}
+
+// Robust seek: waits until the audio element is actually ready to accept a
+// seek, then confirms the seek landed on the requested time. Some hosts
+// (archive.org direct links included, depending on the file) can be slow to
+// honor HTTP Range requests, which makes a plain `audio.currentTime = t`
+// appear to work (the number updates) while playback audibly stays at 0.
+let seekFailCount = 0;
+const seekWarningEl = document.getElementById('seekWarning');
+
+function seekAndPlay(t, audioUrl){
+  function doSeek(){
+    const target = t;
+    audio.currentTime = target;
+
+    const onSeeked = () => {
+      audio.removeEventListener('seeked', onSeeked);
+      // If the browser silently failed to honor the seek (some servers
+      // without proper Range support snap back to 0), try once more.
+      if(Math.abs(audio.currentTime - target) > 1.5){
+        audio.currentTime = target;
+      }
+      // Check shortly after play starts whether we actually landed near target.
+      setTimeout(() => {
+        if(Math.abs(audio.currentTime - target) > 2){
+          seekFailCount++;
+        } else {
+          seekFailCount = 0;
+        }
+        if(seekFailCount >= 3){
+          seekWarningEl.classList.add('show');
+        }
+      }, 400);
+      audio.play();
+    };
+    audio.addEventListener('seeked', onSeeked);
+
+    // Fallback in case 'seeked' never fires (some browsers/hosts skip it
+    // when there's nothing buffered yet) — just try to play anyway.
+    setTimeout(() => {
+      audio.removeEventListener('seeked', onSeeked);
+      audio.play();
+    }, 900);
+  }
+
+  const needsSwitch = audioUrl && audioUrl !== currentAudioUrl;
+  if(needsSwitch){
+    currentAudioUrl = audioUrl;
+    audio.src = audioUrl;
+    audio.addEventListener('loadedmetadata', doSeek, {once:true});
+    audio.load();
+    return;
+  }
+
+  if(audio.readyState >= 1){ // HAVE_METADATA or better
+    doSeek();
+  } else {
+    audio.addEventListener('loadedmetadata', doSeek, {once:true});
+    // in case metadata never fires quickly, nudge the load
+    audio.load();
+  }
+}
+
+function selectItem(idx, opts={}){
+  if(idx < 0 || idx >= flatItems.length) return;
+  currentIdx = idx;
+  const f = flatItems[idx];
+  renderItem(f);
+  highlightTreeSelection(f);
+  if(opts.openTree) openTreeTo(f);
+  nowPlaying.textContent = `${f.bookTitle} ・ ${f.trackLabel} ・ Unit ${f.unitNum} ・ セクション ${f.sectionNum} ・ ${f.itemNum}`;
+  if(opts.autoplay){
+    seekAndPlay(f.start, f.audioUrl);
+  } else if(f.audioUrl !== currentAudioUrl){
+    currentAudioUrl = f.audioUrl;
+    audio.src = f.audioUrl;
+    audio.load();
+  }
+}
+
+function renderItem(f){
+  const it = f.ref;
+  const wrap = document.createElement('div');
+
+  const crumbs = document.createElement('div');
+  crumbs.className = 'crumbs';
+  crumbs.innerHTML = `${f.bookTitle} &nbsp;/&nbsp; ${f.trackLabel} &nbsp;/&nbsp; Unit ${f.unitNum} &nbsp;/&nbsp; セクション ${f.sectionNum} &nbsp;/&nbsp; <b>項目 ${f.itemNum}</b>`;
+  wrap.appendChild(crumbs);
+
+  const title = document.createElement('h2');
+  title.className = 'item-title';
+  title.innerHTML = `会話 ${f.itemNum} <span class="n">${fmtTime(it.start)}</span>`;
+  wrap.appendChild(title);
+
+  const dlg = document.createElement('div');
+  dlg.className = 'dialogue';
+
+  (it.turns || []).forEach(t => {
+    const label = t.speaker;
+    const k = t.kalimat;
+    const turn = document.createElement('div');
+    turn.className = 'turn speaker-' + label;
+
+    const badge = document.createElement('div');
+    badge.className = 'badge';
+    badge.textContent = label;
+    turn.appendChild(badge);
+
+    const lines = document.createElement('div');
+    lines.className = 'lines';
+
+    const kEl = document.createElement('div');
+    kEl.className = 'kalimat';
+    kEl.dataset.start = k.start;
+    kEl.title = 'クリックして再生';
+    k.kata.forEach(w => {
+      const wEl = document.createElement('span');
+      wEl.className = 'kata';
+      wEl.dataset.start = w.start;
+      wEl.dataset.end = w.end;
+      wEl.textContent = w.word;
+      kEl.appendChild(wEl);
+    });
+    kEl.onclick = () => {
+      seekAndPlay(k.start, f.audioUrl);
+    };
+    lines.appendChild(kEl);
+
+    if(k.text_id){
+      const tr = document.createElement('div');
+      tr.className = 'terjemahan';
+      tr.textContent = k.text_id;
+      lines.appendChild(tr);
+    }
+
+    turn.appendChild(lines);
+    dlg.appendChild(turn);
+  });
+
+  wrap.appendChild(dlg);
+
+  const nav = document.createElement('div');
+  nav.className = 'item-nav';
+  const prevBtn = document.createElement('button');
+  prevBtn.textContent = '← 前の項目';
+  prevBtn.disabled = currentIdx <= 0;
+  prevBtn.onclick = () => selectItem(currentIdx - 1, {autoplay:true, openTree:true});
+  const nextBtn = document.createElement('button');
+  nextBtn.textContent = '次の項目 →';
+  nextBtn.disabled = currentIdx >= flatItems.length - 1;
+  nextBtn.onclick = () => selectItem(currentIdx + 1, {autoplay:true, openTree:true});
+  nav.appendChild(prevBtn);
+  nav.appendChild(nextBtn);
+  wrap.appendChild(nav);
+
+  mainEl.innerHTML = '';
+  mainEl.appendChild(wrap);
+}
+
+// ---- Player logic ----
+playBtn.onclick = () => {
+  if(audio.paused){ audio.play(); } else { audio.pause(); }
+};
+audio.addEventListener('play', () => playBtn.textContent = '❚❚');
+audio.addEventListener('pause', () => playBtn.textContent = '▶');
+
+audio.addEventListener('loadedmetadata', () => {
+  seek.max = audio.duration;
+});
+
+seek.addEventListener('input', () => {
+  audio.currentTime = seek.value;
+});
+
+document.querySelectorAll('.speed-group button').forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll('.speed-group button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    audio.playbackRate = parseFloat(btn.dataset.speed);
+  };
+});
+
+loopBtn.onclick = () => {
+  loopMode = !loopMode;
+  loopBtn.classList.toggle('active', loopMode);
+};
+
+let lastAutoSwitch = 0;
+let lastCenteredKata = null;
+audio.addEventListener('timeupdate', () => {
+  seek.value = audio.currentTime;
+  timeLabel.textContent = `${fmtTime(audio.currentTime)} / ${fmtTime(audio.duration)}`;
+
+  // loop current item
+  if(currentIdx >= 0){
+    const f = flatItems[currentIdx];
+    if(loopMode && audio.currentTime >= f.end){
+      audio.currentTime = f.start;
+      return;
+    }
+    // auto-advance highlighted item when playing sequentially past its end
+    // (only within the same track/audio file)
+    if(!loopMode && audio.currentTime > f.end + 0.05 && Date.now() - lastAutoSwitch > 300){
+      const next = flatItems.findIndex((it2, i) => i>currentIdx && it2.trackId===f.trackId && audio.currentTime >= it2.start - 0.05 && audio.currentTime <= it2.end + 3);
+      if(next !== -1 && next !== currentIdx){
+        lastAutoSwitch = Date.now();
+        selectItem(next, {openTree:true});
+      }
+    }
+  }
+
+  // word highlight
+  document.querySelectorAll('.kata.current').forEach(el => el.classList.remove('current'));
+  const t = audio.currentTime;
+  let activeKata = null;
+  document.querySelectorAll('.kata').forEach(el => {
+    const s = parseFloat(el.dataset.start), e = parseFloat(el.dataset.end);
+    if(t >= s && t <= e){
+      el.classList.add('current');
+      activeKata = el;
+    }
+  });
+  // keep the word being read centered in the viewport, but only re-scroll
+  // when the highlighted word actually changes (avoids jitter every tick)
+  if(activeKata && activeKata !== lastCenteredKata){
+    lastCenteredKata = activeKata;
+    activeKata.scrollIntoView({behavior:'smooth', block:'center'});
+  } else if(!activeKata){
+    lastCenteredKata = null;
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if(e.target.tagName === 'INPUT') return;
+  if(e.code === 'Space'){
+    e.preventDefault();
+    if(audio.paused) audio.play(); else audio.pause();
+  }
+});
+</script>
+</body>
+</html>
