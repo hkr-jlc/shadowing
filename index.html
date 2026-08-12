@@ -170,23 +170,6 @@
   .book-block.open .book-units{display:block;}
 
   .track-block{margin-bottom:8px; margin-top:6px;}
-  .track-head{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    width:100%;
-    background:rgba(44,74,110,0.05);
-    border:none;
-    text-align:left;
-    padding:12px 12px;
-    cursor:pointer;
-    border-radius:8px;
-    font-family:'Shippori Mincho', serif;
-    font-size:16px;
-    font-weight:700;
-    color:var(--ai);
-  }
-  .track-head{cursor:default;}
   .track-units{
     display:block;
     padding-left:6px;
@@ -677,11 +660,6 @@ function buildTree(){
     const trackBlock = document.createElement('div');
     trackBlock.className = 'track-block';
     trackBlock.dataset.track = trackId;
-
-    const trackHead = document.createElement('div');
-    trackHead.className = 'track-head';
-    trackHead.innerHTML = `<span>${tr.label}</span>`;
-    trackBlock.appendChild(trackHead);
 
     const unitsWrap = document.createElement('div');
     unitsWrap.className = 'track-units';
