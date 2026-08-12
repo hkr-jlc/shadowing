@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>シャドーイング — 日本語を話そう</title>
+<title>シャドーイング — 日本語を話そう！</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -186,21 +186,13 @@
     font-weight:700;
     color:var(--ai);
   }
-  .track-head:hover{background:rgba(44,74,110,0.1);}
-  .track-head .chev{
-    margin-left:auto;
-    font-size:11px;
-    color:var(--ai-soft);
-    transition:transform .18s ease;
-  }
-  .track-block.open .track-head .chev{transform:rotate(90deg);}
+  .track-head{cursor:default;}
   .track-units{
-    display:none;
+    display:block;
     padding-left:6px;
     margin-left:10px;
     border-left:2px solid var(--paper-line);
   }
-  .track-block.open .track-units{display:block;}
 
   .unit-block{margin-bottom:4px;}
   .unit-head{
@@ -533,7 +525,7 @@
 <div class="topbar">
   <button class="sidebar-toggle" id="sidebarToggle" aria-label="メニューを開閉">☰</button>
   <div class="brand">
-    <h1>日本語を話そう</h1>
+    <h1>シャドーイング 日本語を話そう！</h1>
     <div class="sub">教材・CD・Unit を選んで練習を始めましょう</div>
   </div>
   <button id="translationToggle" aria-label="翻訳の表示切替" title="インドネシア語訳の表示切替">🇮🇩 訳</button>
@@ -686,10 +678,9 @@ function buildTree(){
     trackBlock.className = 'track-block';
     trackBlock.dataset.track = trackId;
 
-    const trackHead = document.createElement('button');
+    const trackHead = document.createElement('div');
     trackHead.className = 'track-head';
-    trackHead.innerHTML = `<span>${tr.label}</span><span class="chev">▶</span>`;
-    trackHead.onclick = () => trackBlock.classList.toggle('open');
+    trackHead.innerHTML = `<span>${tr.label}</span>`;
     trackBlock.appendChild(trackHead);
 
     const unitsWrap = document.createElement('div');
