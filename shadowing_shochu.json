@@ -74,7 +74,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "どれ?",
                         "start": 32.749,
@@ -122,7 +122,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "それ",
                         "start": 35.369,
@@ -485,7 +485,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "わかりました",
                         "start": 71.272,
@@ -958,7 +958,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "どういたしまして。",
                         "start": 115.409,
@@ -1043,7 +1043,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "そうですね。",
                         "start": 121.03200000000001,
@@ -1123,7 +1123,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "元気です",
                         "start": 126.402,
@@ -1850,7 +1850,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "平成18年だよ",
                         "start": 178.29399999999998,
@@ -1924,7 +1924,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "どのぐらいですか?",
                         "start": 183.225,
@@ -1955,7 +1955,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "1年3ヶ月です",
                         "start": 184.946,
@@ -2034,7 +2034,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "渡辺です",
                         "start": 196.07399999999998,
@@ -2055,7 +2055,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "田中です。",
                         "start": 197.21499999999997,
@@ -2151,7 +2151,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "そうです",
                         "start": 203.039,
@@ -2226,7 +2226,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "加藤です",
                         "start": 208.283,
@@ -2321,7 +2321,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "あ、",
                         "start": 214.285,
@@ -3265,7 +3265,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "とても面白いです",
                         "start": 287.349,
@@ -3373,7 +3373,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "難しいですか?",
                         "start": 296.49399999999997,
@@ -3399,7 +3399,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "いいえ、",
                         "start": 298.195,
@@ -3558,7 +3558,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "ちょっと大きいです",
                         "start": 309.12756249999995,
@@ -3584,7 +3584,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "じゃあこれはどうですか?",
                         "start": 311.0485625,
@@ -3648,7 +3648,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "綺麗ですね",
                         "start": 316.13256249999995,
@@ -3674,7 +3674,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ええとても綺麗ですね",
                         "start": 317.69456249999996,
@@ -3774,7 +3774,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "どうぞよろしくお願いします",
                         "start": 329.0035625,
@@ -3884,7 +3884,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "いただきます",
                         "start": 335.2915625,
@@ -4002,7 +4002,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "初めてですか",
                         "start": 344.4575625,
@@ -4028,7 +4028,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "いいえ3回目です",
                         "start": 346.0995625,
@@ -4149,7 +4149,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "そろそろ失礼します",
                         "start": 355.7655625,
@@ -4180,7 +4180,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "そうですか",
                         "start": 357.6075625,
@@ -4250,7 +4250,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "美味しそう",
                         "start": 361.96156249999996,
@@ -4318,7 +4318,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "中国のお菓子。",
                         "start": 366.1025625,
@@ -4502,7 +4502,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "何時?",
                         "start": 377.24556249999995,
@@ -4518,7 +4518,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "えーっと、4時20分。",
                         "start": 378.30556249999995,
@@ -4587,7 +4587,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "どこ行くの?",
                         "start": 384.4075624999999,
@@ -4613,7 +4613,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "友達と海に行きます。",
                         "start": 385.72856249999995,
@@ -4682,7 +4682,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "学校の電話番号わかりますか?",
                         "start": 395.8235625,
@@ -4728,7 +4728,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "えーっとねー",
                         "start": 398.9655625,
@@ -4751,7 +4751,7 @@
                     {
                       "speaker": "B",
                       "kalimat": {
-                        "text": "03 -3205 -13",
+                        "text": "03 - 3205 - 13",
                         "start": 400.7265625,
                         "end": 404.38956249999995,
                         "kata": [
@@ -4923,7 +4923,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "どこで買いましたか?",
                         "start": 417.45856249999997,
@@ -5043,7 +5043,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "学校に近いです。",
                         "start": 425.8155625,
@@ -5201,7 +5201,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "趣味は何ですか?",
                         "start": 437.8035625,
@@ -5237,7 +5237,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "趣味?",
                         "start": 439.6445625,
@@ -5269,7 +5269,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "写真かな?",
                         "start": 442.1465625,
@@ -5432,7 +5432,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "ハワイの写真です",
                         "start": 454.0905625,
@@ -5463,7 +5463,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "わー",
                         "start": 455.57156249999997,
@@ -5645,7 +5645,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "それから",
                         "start": 467.0185625,
@@ -5725,7 +5725,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "カラオケどうですか",
                         "start": 473.5635625,
@@ -5808,7 +5808,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ちょっとねー",
                         "start": 479.36756249999996,
@@ -5916,7 +5916,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "じゃあ1時間1300円でどうですか?",
                         "start": 486.2225625,
@@ -5972,7 +5972,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "うーん、",
                         "start": 490.3045625,
@@ -6207,7 +6207,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "誰も吸いません",
                         "start": 509.01256249999994,
@@ -6271,7 +6271,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "今日どこで昼ご飯を食べますか?",
                         "start": 513.1865624999999,
@@ -6322,7 +6322,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ごめん、",
                         "start": 516.2285625,
@@ -6392,7 +6392,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "今何時ですか?",
                         "start": 521.8125625,
@@ -6423,7 +6423,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "あ、",
                         "start": 523.5535625,
@@ -6465,7 +6465,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "じゃあ少し休みましょう。",
                         "start": 525.3145625,
@@ -6524,7 +6524,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "お二人ですか?",
                         "start": 531.0385624999999,
@@ -6555,7 +6555,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "はい。",
                         "start": 532.4795624999999,
@@ -6604,7 +6604,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "見ましたか?",
                         "start": 536.5825625,
@@ -6635,7 +6635,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ううん、",
                         "start": 538.0035624999999,
@@ -6710,7 +6710,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "その靴、",
                         "start": 543.4655625,
@@ -6768,7 +6768,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ありがとう。",
                         "start": 546.6275625000001,
@@ -6807,7 +6807,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "山田さん、",
                         "start": 550.3895625,
@@ -6903,7 +6903,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "すみません。",
                         "start": 558.0135625,
@@ -7006,7 +7006,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "今の電車が終電です。",
                         "start": 563.0365625000001,
@@ -7047,7 +7047,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "終電?",
                         "start": 564.8175625,
@@ -7063,7 +7063,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ええ、",
                         "start": 565.8785625,
@@ -7275,7 +7275,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "近いですね",
                         "start": 577.6615625,
@@ -7339,7 +7339,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "駅ありますか?",
                         "start": 586.4685625,
@@ -7370,7 +7370,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ええ、",
                         "start": 588.6705625,
@@ -7555,7 +7555,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "それ?",
                         "start": 600.2605625,
@@ -7676,7 +7676,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "古いです。",
                         "start": 607.6598749999999,
@@ -7802,7 +7802,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "綺麗じゃありません。",
                         "start": 615.961875,
@@ -7892,7 +7892,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "今日は暑いですね",
                         "start": 623.0638749999999,
@@ -7928,7 +7928,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "そうですね。",
                         "start": 625.264875,
@@ -8084,7 +8084,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "あ、本当だ",
                         "start": 634.940875,
@@ -8110,7 +8110,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "8え?",
                         "start": 637.401875,
@@ -8147,7 +8147,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "寒くないですか?",
                         "start": 640.663875,
@@ -8178,7 +8178,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ええ、",
                         "start": 642.525875,
@@ -8353,7 +8353,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "ああ、",
                         "start": 656.634875,
@@ -8385,7 +8385,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "お好み焼きえ?",
                         "start": 657.955875,
@@ -8406,7 +8406,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "お好み?",
                         "start": 659.816875,
@@ -8427,7 +8427,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "うん",
                         "start": 661.069875,
@@ -8459,7 +8459,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "美味しいよ",
                         "start": 662.950875,
@@ -8567,7 +8567,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "お腹いっぱい",
                         "start": 677.414875,
@@ -8588,7 +8588,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "私も",
                         "start": 678.954875,
@@ -8652,7 +8652,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "とっても美味しかったです",
                         "start": 684.015875,
@@ -8693,7 +8693,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "いいえどういたしまして",
                         "start": 685.436875,
@@ -8852,7 +8852,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "いただきます",
                         "start": 697.812875,
@@ -8901,7 +8901,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "サービスもいいし料理もおいしいしそうだね、",
                         "start": 702.4968749999999,
@@ -8967,7 +8967,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "また来たいね",
                         "start": 705.859875,
@@ -9057,7 +9057,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "料理はいいけど",
                         "start": 713.566875,
@@ -9157,7 +9157,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "あっそれからこれも",
                         "start": 722.007875,
@@ -9193,7 +9193,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "本当だ美味しそう",
                         "start": 723.7498750000001,
@@ -9257,7 +9257,7 @@
                       }
                     },
                     {
-                      "speaker": "B",
+                      "speaker": "A",
                       "kalimat": {
                         "text": "ちょっと食べてみる",
                         "start": 730.4758750000001,
@@ -9288,7 +9288,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "うん",
                         "start": 731.7168750000001,
@@ -9372,7 +9372,7 @@
                       }
                     },
                     {
-                      "speaker": "A",
+                      "speaker": "B",
                       "kalimat": {
                         "text": "そうなんだ",
                         "start": 739.282875,
@@ -9521,7 +9521,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "コンビニにお弁当買いに",
 						"start": 754.3138749999999,
@@ -9626,7 +9626,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "いいね",
 						"start": 760.4968749999999,
@@ -9735,7 +9735,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ごめん",
 						"start": 767.6808749999999,
@@ -9851,7 +9851,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ちょっと待って",
 						"start": 775.0648749999999,
@@ -10002,7 +10002,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "それとも紙?",
 						"start": 785.8578749999999,
@@ -10033,7 +10033,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "7あー、",
 						"start": 786.577875,
@@ -10080,7 +10080,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ちょっと酔っ払ったよ",
 						"start": 792.3208749999999,
@@ -10111,7 +10111,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "うーん、眠くなってきた",
 						"start": 794.341875,
@@ -10180,7 +10180,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "おいくつですか?",
 						"start": 800.6438749999999,
@@ -10216,7 +10216,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "え?",
 						"start": 802.404875,
@@ -10253,7 +10253,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "聞かないで",
 						"start": 803.5858749999999,
@@ -10348,7 +10348,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "わかんないな",
 						"start": 811.628875,
@@ -10464,7 +10464,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "運転しながらは",
 						"start": 820.293875,
@@ -10554,7 +10554,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "暑くて暑くて",
 						"start": 831.379875,
@@ -10700,7 +10700,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あそこで電話してる人",
 						"start": 840.107875,
@@ -10820,7 +10820,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "行きましょう",
 						"start": 847.190875,
@@ -10894,7 +10894,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "パソコンでどう書くんですか?",
 						"start": 853.613875,
@@ -10940,7 +10940,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "WO",
 						"start": 856.134875,
@@ -11000,7 +11000,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "あんまり食べないねうーん",
 						"start": 860.976875,
@@ -11036,7 +11036,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "今日はお腹の調子があまり良くないんです",
 						"start": 864.029875,
@@ -11125,7 +11125,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "新しい言葉がたくさんある",
 						"start": 870.851875,
@@ -11161,7 +11161,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ほんと、頭が変になりそう",
 						"start": 873.412875,
@@ -11588,7 +11588,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "すぐそこです。",
 						"start": 904.0616249999999,
@@ -11657,7 +11657,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "上手になったね。",
 						"start": 912.303625,
@@ -11693,7 +11693,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "いやー、",
 						"start": 913.6636249999999,
@@ -11829,7 +11829,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "先生に聞いてから買いに行ったら?",
 						"start": 922.126625,
@@ -11929,7 +11929,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "このストーブ、",
 						"start": 928.707625,
@@ -12075,7 +12075,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "見事ですよ。",
 						"start": 937.3096249999999,
@@ -12200,7 +12200,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "それは方言ですよ。",
 						"start": 944.752625,
@@ -12315,7 +12315,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "この携帯テレビが見られるんだ。",
 						"start": 952.1546249999999,
@@ -12366,7 +12366,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "うん、",
 						"start": 954.3546249999999,
@@ -12413,7 +12413,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あんまり使わないけどね。",
 						"start": 955.8556249999999,
@@ -12508,7 +12508,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "私お酒弱いんです",
 						"start": 963.9176249999999,
@@ -12602,7 +12602,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "寝る人は別の部屋へ行ってください",
 						"start": 971.4606249999999,
@@ -12663,7 +12663,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "わかりました",
 						"start": 973.641625,
@@ -12712,7 +12712,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "メガネ",
 						"start": 978.9846249999999,
@@ -12785,7 +12785,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "どっかで見たよ",
 						"start": 983.666625,
@@ -12885,7 +12885,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "さっき軽く食べちゃったんだ",
 						"start": 989.9126249999999,
@@ -13020,7 +13020,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "テレビ見たり漫画読んだり",
 						"start": 1001.4556249999999,
@@ -13181,7 +13181,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "なんでだろうね",
 						"start": 1012.118625,
@@ -13375,7 +13375,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "もう慣れた?",
 						"start": 1025.324625,
@@ -13401,7 +13401,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ええ、",
 						"start": 1026.365625,
@@ -13516,7 +13516,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "久しぶり",
 						"start": 1033.270625,
@@ -13776,7 +13776,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "そろそろ行きませんか?",
 						"start": 1049.7136249999999,
@@ -13812,7 +13812,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 1051.114625,
@@ -13854,7 +13854,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "その前にトイレ、",
 						"start": 1052.6756249999999,
@@ -13960,7 +13960,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "土日にするつもりだけど、",
 						"start": 1060.721625,
@@ -14095,7 +14095,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ピーター",
 						"start": 1069.8876249999998,
@@ -14259,7 +14259,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ちょっと聞き取れませんでしたあ、",
 						"start": 1084.162625,
@@ -14305,7 +14305,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ごめんなさい",
 						"start": 1086.2236249999999,
@@ -14390,7 +14390,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "眼鏡かけて背が高い先生だよ",
 						"start": 1092.287625,
@@ -14495,7 +14495,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "大丈夫です",
 						"start": 1099.1706249999997,
@@ -14694,7 +14694,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "懐かしいね",
 						"start": 1112.310625,
@@ -14757,7 +14757,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ランチタイムはビール200円なんだってへー",
 						"start": 1118.775625,
@@ -14818,7 +14818,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "知らなかった",
 						"start": 1121.578625,
@@ -15098,7 +15098,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "もう降っていませんよ",
 						"start": 1138.9926249999999,
@@ -15144,7 +15144,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "9あいこさん",
 						"start": 1141.9936249999998,
@@ -15242,7 +15242,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "どうもありがとう",
 						"start": 1147.976625,
@@ -15400,7 +15400,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "あのさ",
 						"start": 1164.0426249999998,
@@ -15421,7 +15421,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あちょっとごめんね",
 						"start": 1165.163625,
@@ -15511,7 +15511,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "今日キムさんが初めて宿題してきたんだよ",
 						"start": 1171.893625,
@@ -15587,7 +15587,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "へえ、",
 						"start": 1174.4746249999998,
@@ -15692,7 +15692,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "一緒に行きませんか?",
 						"start": 1181.797625,
@@ -15733,7 +15733,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 1183.1186249999998,
@@ -15813,7 +15813,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ちょっとよろしいですか?",
 						"start": 1189.440625,
@@ -15844,7 +15844,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 1190.7616249999999,
@@ -15881,7 +15881,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "何ですか?",
 						"start": 1192.442625,
@@ -15930,7 +15930,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "昨日ねえ",
 						"start": 1197.364625,
@@ -16018,7 +16018,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "すごいで",
 						"start": 1200.933625,
@@ -16060,7 +16060,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "どこ行って何したの?",
 						"start": 1203.4956249999998,
@@ -16289,7 +16289,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "遅いね",
 						"start": 1218.7826249999998,
@@ -16369,7 +16369,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "私のと同じだけど",
 						"start": 1226.6856249999998,
@@ -16479,7 +16479,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "いいようですね",
 						"start": 1234.548625,
@@ -16676,7 +16676,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "迎えに行くよありがとう",
 						"start": 1251.1956249999998,
@@ -16712,7 +16712,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "よろしく",
 						"start": 1252.9166249999998,
@@ -16927,7 +16927,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "今日はまだ終われないんだ",
 						"start": 1268.5416249999998,
@@ -17121,7 +17121,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "どこかな?",
 						"start": 1283.125625,
@@ -17241,7 +17241,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "道を教えてもらえませんか?",
 						"start": 1291.188625,
@@ -17292,7 +17292,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "はい、",
 						"start": 1292.909625,
@@ -17530,7 +17530,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "美味しかったね",
 						"start": 1310.458625,
@@ -17556,7 +17556,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "うん、特にデザートがね",
 						"start": 1311.639625,
@@ -17730,7 +17730,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ちょっと厳しいかも",
 						"start": 1328.497625,
@@ -17904,7 +17904,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "大丈夫だよ",
 						"start": 1341.061625,
@@ -17963,7 +17963,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "もう少しゆっくり話してください",
 						"start": 1346.2426249999999,
@@ -18004,7 +18004,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、はい",
 						"start": 1348.2436249999998,
@@ -18217,7 +18217,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "クリスマスはいつも自分で作るんですよ。",
 						"start": 1362.664625,
@@ -18325,7 +18325,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "をしようと思っています。",
 						"start": 1369.247625,
@@ -18418,7 +18418,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "他には誰が行きますか?",
 						"start": 1372.709625,
@@ -18777,7 +18777,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "そうだね",
 						"start": 1401.009625,
@@ -18857,7 +18857,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "安いと",
 						"start": 1406.5146249999998,
@@ -18894,7 +18894,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "は似ていますね",
 						"start": 1408.6956249999998,
@@ -18935,7 +18935,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ええ、そうですね",
 						"start": 1410.5366249999997,
@@ -18966,7 +18966,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "何かいい覚え方がありますか?",
 						"start": 1412.3966249999999,
@@ -19022,7 +19022,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "そうですね",
 						"start": 1415.2376249999998,
@@ -19074,7 +19074,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "のス",
 						"start": 1418.9386249999998,
@@ -19131,7 +19131,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "どうですか?",
 						"start": 1422.8796249999998,
@@ -19257,7 +19257,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "うちに忘れてきちゃった",
 						"start": 1432.2226249999999,
@@ -19341,7 +19341,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "バーベキュー",
 						"start": 1439.4476249999998,
@@ -19378,7 +19378,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "山田さんも来ない?",
 						"start": 1440.9086249999998,
@@ -19414,7 +19414,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あー、",
 						"start": 1442.748625,
@@ -19456,7 +19456,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "土曜日はちょっと…",
 						"start": 1445.729625,
@@ -19487,7 +19487,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "あー、",
 						"start": 1447.6106249999998,
@@ -19519,7 +19519,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "残念ね。",
 						"start": 1449.5506249999999,
@@ -19540,7 +19540,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "うーん、",
 						"start": 1450.231625,
@@ -19618,7 +19618,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ホルヘさんとか。",
 						"start": 1454.952625,
@@ -19649,7 +19649,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "えー、",
 						"start": 1456.372625,
@@ -19686,7 +19686,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "行きたいんだけどね。",
 						"start": 1459.0136249999998,
@@ -19779,7 +19779,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ちょっと食べてみて。",
 						"start": 1465.815625,
@@ -19815,7 +19815,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "えっパンを自分で?",
 						"start": 1467.3716249999998,
@@ -19872,7 +19872,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "じゃあ",
 						"start": 1470.9126249999997,
@@ -19951,7 +19951,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "まあまああ、",
 						"start": 1477.2156249999998,
@@ -19972,7 +19972,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "そう",
 						"start": 1479.1766249999998,
@@ -20041,7 +20041,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "家賃いくらですか?",
 						"start": 1490.0206249999999,
@@ -20072,7 +20072,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "月5万円です",
 						"start": 1491.8016249999998,
@@ -20162,7 +20162,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "昨日しといたよ",
 						"start": 1497.804625,
@@ -20198,7 +20198,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "3、あ、",
 						"start": 1499.988625,
@@ -20240,7 +20240,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "昨日の台風で木が倒れてる",
 						"start": 1502.1478124999999,
@@ -20291,7 +20291,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "本当だ、",
 						"start": 1504.5488125,
@@ -20386,7 +20386,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "宿題は?",
 						"start": 1510.2098125,
@@ -20407,7 +20407,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 1511.5508125,
@@ -20439,7 +20439,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "今母が来ているので来週出してもいいですか?",
 						"start": 1513.0708124999999,
@@ -20548,7 +20548,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "今日お弁当?",
 						"start": 1518.7518125,
@@ -20626,7 +20626,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "彼女に作ってもらいました",
 						"start": 1523.2538124999999,
@@ -20700,7 +20700,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "その靴大きくないですか?",
 						"start": 1528.5948125,
@@ -20741,7 +20741,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ううん",
 						"start": 1530.8158125,
@@ -20780,7 +20780,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ドアが開いていますね",
 						"start": 1536.1978124999998,
@@ -20826,7 +20826,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "本当だ、",
 						"start": 1538.2188124999998,
@@ -20926,7 +20926,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "田中さん、",
 						"start": 1544.9208124999998,
@@ -21019,7 +21019,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "おごってもらおう",
 						"start": 1549.8828124999998,
@@ -21094,7 +21094,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "僕も今来たところ",
 						"start": 1556.2458124999998,
@@ -21184,7 +21184,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 1562.3198125,
@@ -21320,7 +21320,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "そのままで。",
 						"start": 1573.4248125,
@@ -21369,7 +21369,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "京都から友達が来るんだ。",
 						"start": 1577.1258125,
@@ -21415,7 +21415,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "そうなんだ。",
 						"start": 1579.4468124999999,
@@ -21505,7 +21505,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "今日何時に帰ってくる?",
 						"start": 1584.7698125,
@@ -21551,7 +21551,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "うーん、",
 						"start": 1587.1298124999998,
@@ -21636,7 +21636,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "電気がついていますね",
 						"start": 1592.5918125,
@@ -21682,7 +21682,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "本当だ、",
 						"start": 1594.5128124999999,
@@ -21818,7 +21818,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "すごい、おめでとう",
 						"start": 1603.2748125,
@@ -21903,7 +21903,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ダイエット中でね、",
 						"start": 1610.5968125,
@@ -22016,7 +22016,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "伺ってもよろしいですか?",
 						"start": 1616.7188125,
@@ -22057,7 +22057,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "はい、",
 						"start": 1618.9398125,
@@ -22127,7 +22127,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "東京駅で事件があったらしいですね",
 						"start": 1624.0698125,
@@ -22188,7 +22188,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "そうらしいですね",
 						"start": 1627.0118125,
@@ -22257,7 +22257,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "書いてくださいね",
 						"start": 1632.6768124999999,
@@ -22288,7 +22288,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "はい、大丈夫です。",
 						"start": 1634.3578125,
@@ -22335,7 +22335,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "書いてあります",
 						"start": 1637.1798125,
@@ -22394,7 +22394,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "シャドーイング?",
 						"start": 1641.1628125,
@@ -22477,7 +22477,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "スラスラ話せるようになるんだって",
 						"start": 1645.7668125,
@@ -22556,7 +22556,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "そのクッキー",
 						"start": 1654.9138124999997,
@@ -22614,7 +22614,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "もう全部食べちゃった。",
 						"start": 1658.1968124999999,
@@ -22694,7 +22694,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "雨が降ってる。",
 						"start": 1663.4808124999997,
@@ -22725,7 +22725,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 1665.4228124999997,
@@ -22757,7 +22757,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "この傘貸してあげる。",
 						"start": 1666.8838124999997,
@@ -22852,7 +22852,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "どうぞ。",
 						"start": 1671.9878124999998,
@@ -22935,7 +22935,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "すみません。",
 						"start": 1675.9308124999998,
@@ -22984,7 +22984,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "山田さん?",
 						"start": 1679.8748124999997,
@@ -23021,7 +23021,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "話して大丈夫?",
 						"start": 1681.7238125,
@@ -23047,7 +23047,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 1683.6448125,
@@ -23079,7 +23079,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "今シャワー",
 						"start": 1685.1258125,
@@ -23151,7 +23151,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "後で電話していい?",
 						"start": 1687.1068125,
@@ -23215,7 +23215,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "聞いた?",
 						"start": 1691.6688125,
@@ -23257,7 +23257,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "結婚するんだって。",
 						"start": 1693.5308125,
@@ -23293,7 +23293,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "うん、",
 						"start": 1695.3918125,
@@ -23358,7 +23358,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ビデオデッキに変なビデオが入っていますね。",
 						"start": 1700.7338124999999,
@@ -23429,7 +23429,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "本当だ。",
 						"start": 1703.6558125,
@@ -23519,7 +23519,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "もっときれいに書いてください。",
 						"start": 1708.9188125,
@@ -23627,7 +23627,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "なんでしょう。",
 						"start": 1714.0428124999999,
@@ -23700,7 +23700,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ねえ、",
 						"start": 1719.8478125,
@@ -23778,7 +23778,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ごめんなさい。",
 						"start": 1723.6508124999998,
@@ -23851,7 +23851,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "約束したのにどうして来てくれなかったの?",
 						"start": 1728.3958125,
@@ -23932,7 +23932,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ごめん、",
 						"start": 1731.5978125,
@@ -23974,7 +23974,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "どうしても会議に抜けられなかったんだ。",
 						"start": 1733.9208124999998,
@@ -24077,7 +24077,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ご飯でもいかがですか?",
 						"start": 1739.0168125,
@@ -24118,7 +24118,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 1741.0978125,
@@ -24229,7 +24229,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "飲みすぎないようにしています",
 						"start": 1752.1048125,
@@ -24323,7 +24323,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "緊張しましたか?",
 						"start": 1757.0288125,
@@ -24359,7 +24359,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ええ、",
 						"start": 1758.9498125,
@@ -24469,7 +24469,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "誰かわかる人いない?",
 						"start": 1766.1748125,
@@ -24510,7 +24510,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "よくわかんないんだよね。",
 						"start": 1768.1438124999997,
@@ -24625,7 +24625,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "帰ったら家族から手紙が来ていたんだ。",
 						"start": 1774.8268124999997,
@@ -24753,7 +24753,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "よかったね。",
 						"start": 1780.8088125,
@@ -24807,7 +24807,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "明日までに書類作っておいてくださいね。",
 						"start": 1785.3108124999999,
@@ -24868,7 +24868,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "はい、",
 						"start": 1788.4918125,
@@ -24943,7 +24943,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "昨日の店、",
 						"start": 1793.8738124999998,
@@ -25056,7 +25056,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "それってぼったくりじゃない",
 						"start": 1799.6538125,
@@ -25115,7 +25115,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "この本何?",
 						"start": 1804.2862499999999,
@@ -25162,7 +25162,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "見せて",
 						"start": 1806.7672499999999,
@@ -25183,7 +25183,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "うん、",
 						"start": 1807.94825,
@@ -25248,7 +25248,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ダイエットしてるのにまた食べちゃった",
 						"start": 1813.59025,
@@ -25304,7 +25304,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ダイエットやめたら?",
 						"start": 1816.31125,
@@ -25388,7 +25388,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "何かおすすめ知ってる?",
 						"start": 1821.85325,
@@ -25429,7 +25429,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "辞書のことなら、",
 						"start": 1824.03425,
@@ -25496,7 +25496,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "この前新しいの買ってたよ",
 						"start": 1826.43525,
@@ -25684,7 +25684,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "いい色だね",
 						"start": 1844.02425,
@@ -25715,7 +25715,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ああどうもありがとう",
 						"start": 1845.04525,
@@ -25851,7 +25851,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "漢字を調べてるの",
 						"start": 1854.0522499999997,
@@ -25910,7 +25910,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "髪の毛",
 						"start": 1859.3562499999998,
@@ -25977,7 +25977,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "長くて綺麗だったのに",
 						"start": 1862.35825,
@@ -26023,7 +26023,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "そう?でも短いとすごく楽",
 						"start": 1864.15925,
@@ -26092,7 +26092,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "今日バイト初めての日なんだけど",
 						"start": 1871.02125,
@@ -26220,7 +26220,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "できればね",
 						"start": 1875.8432500000001,
@@ -26368,7 +26368,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "昨日渋谷で男の人と一緒に歩いていたね",
 						"start": 1889.4532499999998,
@@ -26449,7 +26449,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "わぁ恥ずかしい",
 						"start": 1892.51425,
@@ -26650,7 +26650,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "本場の味だよ",
 						"start": 1904.69925,
@@ -26776,7 +26776,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "アクション",
 						"start": 1915.4042499999998,
@@ -26846,7 +26846,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "カレー",
 						"start": 1924.07525,
@@ -27005,7 +27005,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "あと半年で卒業",
 						"start": 1940.40425,
@@ -27098,7 +27098,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "だから今のうちにやりたいことやっておかなくちゃね",
 						"start": 1945.86725,
@@ -27207,7 +27207,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "すみません",
 						"start": 1952.20725,
@@ -27274,7 +27274,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "バイト1週間休ませていただけませんか",
 						"start": 1955.48925,
@@ -27335,7 +27335,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "え",
 						"start": 1958.77125,
@@ -27372,7 +27372,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "もっと早く行ってくれないと",
 						"start": 1960.75325,
@@ -27456,7 +27456,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "アルミホイルは燃えないゴミだよ",
 						"start": 1966.93725,
@@ -27502,7 +27502,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あー",
 						"start": 1969.45925,
@@ -27637,7 +27637,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "たくさん飲んでも大丈夫",
 						"start": 1978.42525,
@@ -27673,7 +27673,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "そうかもしれないけど飲みすぎは良くないんじゃない?",
 						"start": 1980.32625,
@@ -27797,7 +27797,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "試合頑張ってね",
 						"start": 1987.71125,
@@ -27828,7 +27828,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "うん",
 						"start": 1989.47325,
@@ -27913,7 +27913,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "行こうかな",
 						"start": 1997.11825,
@@ -27965,7 +27965,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "どうしようかな",
 						"start": 2000.30025,
@@ -27996,7 +27996,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "もう行くって言ってあるんでしょ?",
 						"start": 2002.10125,
@@ -28142,7 +28142,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "土曜日はちょっと…",
 						"start": 2012.18225,
@@ -28389,7 +28389,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "食べたの誰?",
 						"start": 2028.06925,
@@ -28420,7 +28420,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "あ、",
 						"start": 2029.53125,
@@ -28452,7 +28452,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "わざとじゃないよ",
 						"start": 2031.05025,
@@ -28532,7 +28532,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "とりあえずビール",
 						"start": 2036.8732499999999,
@@ -28751,7 +28751,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "おめでとうございます",
 						"start": 2055.59725,
@@ -28836,7 +28836,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "遠慮なくいただきます",
 						"start": 2062.76325,
@@ -28936,7 +28936,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "なるべく安いのがいいんですが、",
 						"start": 2071.18925,
@@ -29024,7 +29024,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "この時計",
 						"start": 2077.15325,
@@ -29102,7 +29102,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ロレックスじゃないんだ。",
 						"start": 2079.85525,
@@ -29195,7 +29195,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "もしもし、",
 						"start": 2086.31925,
@@ -29237,7 +29237,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "今何してるの?",
 						"start": 2088.00025,
@@ -29273,7 +29273,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ん?",
 						"start": 2089.06125,
@@ -29398,7 +29398,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "そのままにしておいて、",
 						"start": 2097.98725,
@@ -29518,7 +29518,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "勉強に集中できてないようだけど",
 						"start": 2105.49,
@@ -29574,7 +29574,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "はい、気になることがあって",
 						"start": 2107.971,
@@ -29653,7 +29653,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "待った?",
 						"start": 2115.013,
@@ -29674,7 +29674,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "もうひどいよ、",
 						"start": 2115.893,
@@ -29840,7 +29840,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "買う前にちょっと試してみてもいいですか?",
 						"start": 2126.776,
@@ -29970,7 +29970,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "カレーは?",
 						"start": 2138.286,
@@ -29991,7 +29991,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "カレー?",
 						"start": 2139.447,
@@ -30162,7 +30162,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "いつも来るよね",
 						"start": 2149.6150000000002,
@@ -30198,7 +30198,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "ほんとどこかで見てるのかなって思うくらい",
 						"start": 2151.077,
@@ -30338,7 +30338,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "ごめんなさい",
 						"start": 2159.984,
@@ -30464,7 +30464,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "抗生物質を出しておきます",
 						"start": 2169.7509999999997,
@@ -30510,7 +30510,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "え?",
 						"start": 2171.9519999999998,
@@ -30598,7 +30598,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "バクテリアを殺す薬です",
 						"start": 2177.636,
@@ -30667,7 +30667,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "はいちょっとお尋ねしたいのですが",
 						"start": 2183.12,
@@ -30723,7 +30723,7 @@
 					  }
 					},
 					{
-					  "speaker": "A",
+					  "speaker": "B",
 					  "kalimat": {
 						"text": "どうぞ",
 						"start": 2186.002,
@@ -30762,7 +30762,7 @@
 					  }
 					},
 					{
-					  "speaker": "B",
+					  "speaker": "A",
 					  "kalimat": {
 						"text": "なんだか僕、",
 						"start": 2191.245,
