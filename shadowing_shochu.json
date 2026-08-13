@@ -147,32 +147,32 @@
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "おいしい?うん、",
+                        "text": "おいしい?",
                         "start": 38.01,
-                        "end": 39.35,
+                        "end": 38.410000000000004,
                         "kata": [
                           {
                             "word": "おいしい?",
                             "start": 38.01,
                             "end": 38.410000000000004
-                          },
-                          {
-                            "word": "うん、",
-                            "start": 39.230000000000004,
-                            "end": 39.35
                           }
                         ],
-                        "text_id": "enak? Iya,"
+                        "text_id": "enak?"
                       }
                     },
                     {
                       "speaker": "B",
                       "kalimat": {
-                        "text": "おいしいよ",
-                        "start": 40.031,
+                        "text": "うん、おいしいよ",
+                        "start": 39.230000000000004,
                         "end": 40.471000000000004,
                         "kata": [
                           {
+                            "word": "うん、",
+                            "start": 39.230000000000004,
+                            "end": 39.35
+                          },
+						  {
                             "word": "おいしい",
                             "start": 40.031,
                             "end": 40.351
@@ -183,7 +183,7 @@
                             "end": 40.471000000000004
                           }
                         ],
-                        "text_id": "enak kok"
+                        "text_id": "Iya, enak kok"
                       }
                     }
                   ]
@@ -618,9 +618,9 @@
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "エミさんじゃあねうん",
+                        "text": "エミさんじゃあね",
                         "start": 87.799,
-                        "end": 88.879,
+                        "end": 88.759,
                         "kata": [
                           {
                             "word": "エミ",
@@ -641,24 +641,25 @@
                             "word": "ね",
                             "start": 88.64,
                             "end": 88.759
-                          },
-                          {
-                            "word": "うん",
-                            "start": 88.76,
-                            "end": 88.879
                           }
                         ],
-                        "text_id": "Emi-san, sampai jumpa, ya"
+                        "text_id": "Emi-san, sampai jumpa"
                       }
                     },
                     {
                       "speaker": "B",
                       "kalimat": {
-                        "text": "また明日",
-                        "start": 89.62,
+                        "text": "うんまた明日",
+                        "start": 88.76,
                         "end": 90.08,
                         "kata": [
+                          ,
                           {
+                            "word": "うん",
+                            "start": 88.76,
+                            "end": 88.879
+                          },
+						  {
                             "word": "また",
                             "start": 89.62,
                             "end": 89.86
@@ -669,7 +670,7 @@
                             "end": 90.08
                           }
                         ],
-                        "text_id": "sampai besok"
+                        "text_id": "Ya, sampai besok"
                       }
                     }
                   ]
@@ -2005,15 +2006,10 @@
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "1.はじめまして、",
+                        "text": "はじめまして、",
                         "start": 193.112,
                         "end": 195.67399999999998,
                         "kata": [
-                          {
-                            "word": "1.",
-                            "start": 193.112,
-                            "end": 194.993
-                          },
                           {
                             "word": "はじめ",
                             "start": 194.99399999999997,
@@ -2030,7 +2026,7 @@
                             "end": 195.67399999999998
                           }
                         ],
-                        "text_id": "1. Salam kenal,"
+                        "text_id": "Salam kenal,"
                       }
                     },
                     {
@@ -2441,7 +2437,7 @@
                 {
                   "item": 6,
                   "start": 223.427,
-                  "end": 233.53,
+                  "end": 226.748,
                   "turns": [
                     {
                       "speaker": "A",
@@ -2524,19 +2520,21 @@
                         ],
                         "text_id": "Lantai 3."
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "item": 7,
+                  "start": 228.129,
+                  "end": 233.53,
+                  "turns": [
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "7、お名前は?",
+                        "text": "お名前は?",
                         "start": 228.129,
                         "end": 229.98899999999998,
                         "kata": [
-                          {
-                            "word": "7、",
-                            "start": 228.129,
-                            "end": 229.409
-                          },
                           {
                             "word": "お",
                             "start": 229.41,
@@ -2553,7 +2551,7 @@
                             "end": 229.98899999999998
                           }
                         ],
-                        "text_id": "7. Siapa nama Anda?"
+                        "text_id": "Siapa nama Anda?"
                       }
                     },
                     {
@@ -2629,7 +2627,7 @@
                 {
                   "item": 8,
                   "start": 236.351,
-                  "end": 246.191,
+                  "end": 240.212,
                   "turns": [
                     {
                       "speaker": "A",
@@ -2697,19 +2695,21 @@
                         ],
                         "text_id": "Baik, 3 buku, ya."
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "item": 9,
+                  "start": 241.548,
+                  "end": 246.191,
+                  "turns": [
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "9駅までどのぐらいですか",
+                        "text": "駅までどのぐらいですか",
                         "start": 241.548,
                         "end": 244.26999999999998,
                         "kata": [
-                          {
-                            "word": "9",
-                            "start": 241.548,
-                            "end": 242.94899999999998
-                          },
                           {
                             "word": "駅",
                             "start": 243.009,
@@ -2741,7 +2741,7 @@
                             "end": 244.26999999999998
                           }
                         ],
-                        "text_id": "9. Seberapa jauh sampai stasiun?"
+                        "text_id": "Seberapa jauh sampai stasiun?"
                       }
                     },
                     {
@@ -3819,12 +3819,12 @@
                 {
                   "item": 2,
                   "start": 332.1695625,
-                  "end": 335.8515625,
+                  "end": 332.4895625,
                   "turns": [
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "どうぞああ",
+                        "text": "どうぞ",
                         "start": 332.1695625,
                         "end": 333.55056249999996,
                         "kata": [
@@ -3832,7 +3832,18 @@
                             "word": "どうぞ",
                             "start": 332.1695625,
                             "end": 332.4895625
-                          },
+                          }
+                        ],
+                        "text_id": "Silakan"
+                      }
+                    },
+                    {
+                      "speaker": "B",
+                      "kalimat": {
+                        "text": "ああどうもすみません",
+                        "start": 333.2505625,
+                        "end": 334.9115625,
+                        "kata": [
                           {
                             "word": "あ",
                             "start": 333.2505625,
@@ -3842,19 +3853,7 @@
                             "word": "あ",
                             "start": 333.43056249999995,
                             "end": 333.55056249999996
-                          }
-                        ],
-                        "text_id": "Silakan, ah..."
-                      }
-                    },
-                    {
-                      "speaker": "B",
-                      "kalimat": {
-                        "text": "どうもすみません",
-                        "start": 334.11056249999996,
-                        "end": 334.9115625,
-                        "kata": [
-                          {
+                          }{
                             "word": "どう",
                             "start": 334.11056249999996,
                             "end": 334.2505625
@@ -3880,7 +3879,7 @@
                             "end": 334.9115625
                           }
                         ],
-                        "text_id": "Maaf sekali."
+                        "text_id": "Ah...Maaf sekali."
                       }
                     },
                     {
@@ -4131,23 +4130,14 @@
                         ],
                         "text_id": "Iya, tidak masalah."
                       }
-                    },
-                    {
-                      "speaker": "A",
-                      "kalimat": {
-                        "text": "ロック",
-                        "start": 354.5445625,
-                        "end": 354.9055625,
-                        "kata": [
-                          {
-                            "word": "ロック",
-                            "start": 354.5445625,
-                            "end": 354.9055625
-                          }
-                        ],
-                        "text_id": "musik rock"
-                      }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "item": 6,
+                  "start": 354.5445625,
+                  "end": 359.46856249999996,
+                  "turns": [
                     {
                       "speaker": "A",
                       "kalimat": {
@@ -4761,12 +4751,12 @@
                             "end": 400.90656249999995
                           },
                           {
-                            "word": " -3205",
+                            "word": "-3205",
                             "start": 401.06756249999995,
                             "end": 403.08856249999997
                           },
                           {
-                            "word": " -13",
+                            "word": "-13",
                             "start": 403.1685625,
                             "end": 404.38956249999995
                           }
@@ -6038,15 +6028,10 @@
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "1.木村さんの彼はどんな人ですか?",
+                        "text": "木村さんの彼はどんな人ですか?",
                         "start": 498.2275625,
                         "end": 501.7895625,
                         "kata": [
-                          {
-                            "word": "1.",
-                            "start": 498.2275625,
-                            "end": 499.8885625
-                          },
                           {
                             "word": "木村",
                             "start": 499.92856249999994,
@@ -6093,7 +6078,7 @@
                             "end": 501.7895625
                           }
                         ],
-                        "text_id": "1. Pacar Kimura-san orang seperti apa?"
+                        "text_id": "Pacar Kimura-san orang seperti apa?"
                       }
                     },
                     {
@@ -7200,9 +7185,9 @@
                     {
                       "speaker": "B",
                       "kalimat": {
-                        "text": "10月15日ですえぇ?",
+                        "text": "10月15日です",
                         "start": 573.6185624999999,
-                        "end": 575.3605625,
+                        "end": 574.8595624999999,
                         "kata": [
                           {
                             "word": "10",
@@ -7228,24 +7213,24 @@
                             "word": "です",
                             "start": 574.6195624999999,
                             "end": 574.8595624999999
-                          },
-                          {
-                            "word": "えぇ?",
-                            "start": 575.1795625,
-                            "end": 575.3605625
                           }
                         ],
-                        "text_id": "Tanggal 15 Oktober. Eh?"
+                        "text_id": "Tanggal 15 Oktober."
                       }
                     },
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "私は17日です",
-                        "start": 575.9805625,
+                        "text": "えぇ?私は17日です",
+                        "start": 575.1795625,
                         "end": 577.2015624999999,
                         "kata": [
                           {
+                            "word": "えぇ?",
+                            "start": 575.1795625,
+                            "end": 575.3605625
+                          },
+						  {
                             "word": "私",
                             "start": 575.9805625,
                             "end": 576.1005624999999
@@ -7271,7 +7256,7 @@
                             "end": 577.2015624999999
                           }
                         ],
-                        "text_id": "Saya tanggal 17."
+                        "text_id": "Eh? Saya tanggal 17."
                       }
                     },
                     {
@@ -8004,7 +7989,7 @@
                 {
                   "item": 7,
                   "start": 631.237875,
-                  "end": 643.706875,
+                  "end": 635.920875,
                   "turns": [
                     {
                       "speaker": "A",
@@ -8108,19 +8093,21 @@
                         ],
                         "text_id": "Ah, benar juga."
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "item": 8,
+                  "start": 637.401875,
+                  "end": 643.706875,
+                  "turns": [
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "8え?",
+                        "text": "え?",
                         "start": 637.401875,
                         "end": 638.822875,
                         "kata": [
-                          {
-                            "word": "8",
-                            "start": 637.401875,
-                            "end": 638.702875
-                          },
                           {
                             "word": "え?",
                             "start": 638.703875,
@@ -8387,32 +8374,32 @@
                     {
                       "speaker": "B",
                       "kalimat": {
-                        "text": "お好み焼きえ?",
+                        "text": "お好み焼き",
                         "start": 657.955875,
-                        "end": 659.196875,
+                        "end": 658.556875,
                         "kata": [
                           {
                             "word": "お好み焼き",
                             "start": 657.955875,
                             "end": 658.556875
-                          },
-                          {
-                            "word": "え?",
-                            "start": 659.076875,
-                            "end": 659.196875
                           }
                         ],
-                        "text_id": "okonomiyaki, eh?"
+                        "text_id": "okonomiyaki"
                       }
                     },
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "お好み?",
-                        "start": 659.816875,
+                        "text": "え?お好み?",
+                        "start": 659.076875,
                         "end": 660.417875,
                         "kata": [
                           {
+                            "word": "え?",
+                            "start": 659.076875,
+                            "end": 659.196875
+                          },
+						  {
                             "word": "お",
                             "start": 659.816875,
                             "end": 659.937875
@@ -8423,7 +8410,7 @@
                             "end": 660.417875
                           }
                         ],
-                        "text_id": "Okonomi?"
+                        "text_id": "Eh? Okonomi?"
                       }
                     },
                     {
@@ -8903,9 +8890,9 @@
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "サービスもいいし料理もおいしいしそうだね、",
+                        "text": "サービスもいいし料理もおいしいし",
                         "start": 702.4968749999999,
-                        "end": 705.379875,
+                        "end": 704.638875,
                         "kata": [
                           {
                             "word": "サービス",
@@ -8946,7 +8933,18 @@
                             "word": "し",
                             "start": 704.518875,
                             "end": 704.638875
-                          },
+                          }
+                        ],
+                        "text_id": "pelayanannya juga bagus dan masakannya juga enak"
+                      }
+                    },
+                    {
+                      "speaker": "B",
+                      "kalimat": {
+                        "text": "そうだね、",
+                        "start": 704.898875,
+                        "end": 705.379875,
+                        "kata": [
                           {
                             "word": "そう",
                             "start": 704.898875,
@@ -8963,10 +8961,10 @@
                             "end": 705.379875
                           }
                         ],
-                        "text_id": "pelayanannya juga bagus dan masakannya juga enak, ya."
+                        "text_id": "Ya."
                       }
                     },
-                    {
+					{
                       "speaker": "B",
                       "kalimat": {
                         "text": "また来たいね",
@@ -9228,7 +9226,7 @@
                 {
                   "item": 9,
                   "start": 728.9338750000001,
-                  "end": 739.862875,
+                  "end": 732.9378750000001,
                   "turns": [
                     {
                       "speaker": "A",
@@ -9318,19 +9316,21 @@
                         ],
                         "text_id": "Terima kasih."
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "item": 10,
+                  "start": 735.2798750000001,
+                  "end": 739.862875,
+                  "turns": [
                     {
                       "speaker": "A",
                       "kalimat": {
-                        "text": "10豚肉はちょっと",
+                        "text": "豚肉はちょっと",
                         "start": 735.2798750000001,
                         "end": 737.6018750000001,
                         "kata": [
-                          {
-                            "word": "10",
-                            "start": 735.2798750000001,
-                            "end": 736.640875
-                          },
                           {
                             "word": "豚肉",
                             "start": 736.700875,
@@ -9347,7 +9347,7 @@
                             "end": 737.6018750000001
                           }
                         ],
-                        "text_id": "10. Kalau daging babi, agak..."
+                        "text_id": "Kalau daging babi, agak..."
                       }
                     },
                     {
